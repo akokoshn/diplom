@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Rays">
+      <UniqueIdentifier>{5fcdc4b9-0d84-45b1-a254-fdb9738fd9eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Reader">
+      <UniqueIdentifier>{d7a58412-48bf-41a8-ad53-c135c2e18a0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BorderDetecter">
+      <UniqueIdentifier>{3a4bf444-ee5d-4eb4-bdec-965af09ec6ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Detail">
+      <UniqueIdentifier>{a5586c83-5d4f-4673-aa3a-de94b08fd775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Box">
+      <UniqueIdentifier>{d43bad81-58ca-4e5b-8ab2-3da44117d9d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BorderDetecter\BorderDetecter.h">
+      <Filter>BorderDetecter</Filter>
+    </ClInclude>
+    <ClInclude Include="Reader\Reader.h">
+      <Filter>Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="Rays\Rays.h">
+      <Filter>Rays</Filter>
+    </ClInclude>
+    <ClInclude Include="Reader\DICOM_RW.h">
+      <Filter>Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="Detail\Detail.h">
+      <Filter>Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="Box\Box.h">
+      <Filter>Box</Filter>
+    </ClInclude>
+    <ClInclude Include="Box\MainBox.h">
+      <Filter>Box</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BorderDetecter\BorderDetecter.cpp">
+      <Filter>BorderDetecter</Filter>
+    </ClCompile>
+    <ClCompile Include="Reader\Reader.cpp">
+      <Filter>Reader</Filter>
+    </ClCompile>
+    <ClCompile Include="Rays\Rays.cpp">
+      <Filter>Rays</Filter>
+    </ClCompile>
+    <ClCompile Include="Detail\Detail.cpp">
+      <Filter>Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="Box\Box.cpp">
+      <Filter>Box</Filter>
+    </ClCompile>
+    <ClCompile Include="Box\MainBox.cpp">
+      <Filter>Box</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\samples\DICOMApp\Release\DICOMApp.exp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\samples\DICOMApp\Release\DICOMApp.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
