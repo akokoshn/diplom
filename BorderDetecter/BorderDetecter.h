@@ -2,12 +2,12 @@
 #include <list>
 
 //opencv
-#include <cv.h>
-#include <highgui.h>
-#include <ml.h>
-#include <cxcore.h>
-#include <types_c.h>
-#include <opencv2/legacy/legacy.hpp>
+#include <opencv/cv.h>
+#include <opencv/highgui.h>
+#include <opencv/ml.h>
+#include <opencv/cxcore.h>
+#include <opencv2/core/types_c.h>
+//#include <opencv2/legacy/legacy.hpp>
 
 #include "MainBox.h"
 using namespace cv;

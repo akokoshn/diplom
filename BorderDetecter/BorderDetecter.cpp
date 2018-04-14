@@ -195,7 +195,7 @@ void BorderDetecter::Detect(std::list<Mat> *buff, CvPoint centr, int num, int in
 			{
 				Center.x = it->x;
 				Center.y = it->y;
-				_rays.Detect(img, Center, 2, 0, x1, y1, x2, y2);
+				_rays.Detect(&img, Center, 2, 0, x1, y1, x2, y2);
 				show.at<Vec3b>(it->y, it->x)[0] = 0;
 				show.at<Vec3b>(it->y, it->x)[1] = 255;
 				show.at<Vec3b>(it->y, it->x)[2] = 0;

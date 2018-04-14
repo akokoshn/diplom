@@ -4,27 +4,27 @@
 #include <list>
 #include <windows.h>
 //opencv
-#include <cv.h>
-#include <highgui.h>
-#include <ml.h>
-#include <cxcore.h>
-#include <types_c.h>
-#include <opencv2/legacy/legacy.hpp>
+#include <opencv/cv.h>
+#include <opencv/highgui.h>
+#include <opencv/ml.h>
+#include <opencv/cxcore.h>
+#include <opencv2/core/types_c.h>
+//#include <opencv2/legacy/legacy.hpp>
 
-#  pragma comment(lib, "opencv_core2410d.lib")
-#  pragma comment(lib, "opencv_highgui2410d.lib")
-#  pragma comment(lib, "opencv_imgproc2410d.lib")
-#  pragma comment(lib, "opencv_video2410d.lib")
-#  pragma comment(lib, "opencv_ml2410d.lib")
+#  pragma comment(lib, "opencv_core340d.lib")
+#  pragma comment(lib, "opencv_highgui340d.lib")
+#  pragma comment(lib, "opencv_imgproc340d.lib")
+#  pragma comment(lib, "opencv_video340d.lib")
+#  pragma comment(lib, "opencv_ml340d.lib")
 
-#  pragma comment(lib, "opencv_calib3d2410d.lib")
-#  pragma comment(lib, "opencv_objdetect2410d.lib")
-#  pragma comment(lib, "opencv_features2d2410d.lib")
-#  pragma comment(lib, "opencv_contrib2410d.lib")
-#  pragma comment(lib, "opencv_ts2410d.lib")
-#  pragma comment(lib, "opencv_legacy2410d.lib")
-#  pragma comment(lib, "opencv_flann2410d.lib")
-#  pragma comment(lib, "opencv_gpu2410d.lib")
+#  pragma comment(lib, "opencv_calib3d340d.lib")
+#  pragma comment(lib, "opencv_objdetect340d.lib")
+#  pragma comment(lib, "opencv_features2d340d.lib")
+//#  pragma comment(lib, "opencv_contrib340d.lib")
+#  pragma comment(lib, "opencv_ts340d.lib")
+//#  pragma comment(lib, "opencv_legacy340d.lib")
+#  pragma comment(lib, "opencv_flann340d.lib")
+//#  pragma comment(lib, "opencv_gpu340d.lib")
 
 using namespace cv; 
 

@@ -76,12 +76,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\samples\DICOMApp\Release\DICOMApp.exp">
+    <None Include="..\DICOM_Reader\DICOM_Reader\bin\DICOMApp.exp">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\..\..\samples\DICOMApp\Release\DICOMApp.lib">
+    <Library Include="..\DICOM_Reader\DICOM_Reader\bin\DICOMApp.lib">
       <Filter>Resource Files</Filter>
     </Library>
   </ItemGroup>
