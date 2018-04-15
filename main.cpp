@@ -49,7 +49,7 @@ int main(int argc, char** argv)
     }
     else
     {
-        Reader::Read(L"C:\\ITK\\App\\test\\all_body\\*", &buff);
+        Reader::Read(L"C:\\DIPLOM\\IMAGES\\*", &buff);
     }
 	/*
     printf("Input center point:\nx = ");

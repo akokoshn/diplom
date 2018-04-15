@@ -45,7 +45,7 @@ void MainBox::Create(Mat *img)
 	for (int i = 0; i < (img->rows / greed_size); i++) //rays
 	{
 		center.y = i;
-		Left_Ray->SingleRay(img, center, 2, -1, 0, 0, (MainLineX + 2), img->rows);
+		Left_Ray->SingleRay(img, center, -1, 90, 0, 0, (MainLineX + 2), img->rows);
 	}
 	t_list = std::list<CvPoint>(Left_Ray->GetBorderPoints());
 	LeftBox.SetKeyPoints(Left_Ray->GetBorderPoints());
@@ -55,7 +55,7 @@ void MainBox::Create(Mat *img)
 	for (int i = 0; i < (img->rows / greed_size); i++) //rays
 	{
 		center.y = i;
-		Right_Ray->SingleRay(img, center, 2, 1, (MainLineX - 2), 0, img->cols, img->rows);
+		Right_Ray->SingleRay(img, center, 1, 90, (MainLineX - 2), 0, img->cols, img->rows);
 	}
 	t_list.splice(t_list.end(), Right_Ray->GetBorderPoints());
 	RightBox.SetKeyPoints(Right_Ray->GetBorderPoints());
@@ -74,8 +74,8 @@ void MainBox::Create(Mat *img)
 	for (int i = 0; i < (MainLineX / greed_size); i++) //rays
 	{
 		center.x = i;
-		Left_Ray->SingleRay(img, center, -2, -1, 0, 0, (MainLineX + 2), (MainLineY + 2));
-		Left_Ray->SingleRay(img, center, -2, 1, 0, (MainLineY - 2), (MainLineX + 2), img->rows);
+		Left_Ray->SingleRay(img, center, -1, 0, 0, 0, (MainLineX + 2), (MainLineY + 2));
+		Left_Ray->SingleRay(img, center, 1, 0, 0, (MainLineY - 2), (MainLineX + 2), img->rows);
 	}
 	LeftBox.SetKeyPoints(Left_Ray->GetBorderPoints());
 	LeftBox.Create();
@@ -84,8 +84,8 @@ void MainBox::Create(Mat *img)
 	for (int i = MainLineX; i < (img->cols / greed_size); i++) //rays
 	{
 		center.x = i;
-		Right_Ray->SingleRay(img, center, -2, -1, (MainLineX - 2), 0, img->cols, (MainLineY + 2));
-		Right_Ray->SingleRay(img, center, -2, 1, (MainLineX - 2), (MainLineY - 2), img->cols, img->rows);
+		Right_Ray->SingleRay(img, center, -1, 0, (MainLineX - 2), 0, img->cols, (MainLineY + 2));
+		Right_Ray->SingleRay(img, center, 1, 0, (MainLineX - 2), (MainLineY - 2), img->cols, img->rows);
 	}
 	RightBox.SetKeyPoints(Right_Ray->GetBorderPoints());
 	RightBox.Create();
